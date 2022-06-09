@@ -18,16 +18,17 @@
 .form-inputs{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     padding: 20px;
 }
 .inputs{
     display: grid;
     align-items: center;
+    width: 500px;
 }
 .inputs input,
 .inputs textarea{
-    width: 500px;
     padding: 7px 5px;
     font-size: 15px;
     margin-bottom: 10px;
@@ -48,8 +49,32 @@
 .message-btn:hover{
     background: #0066ff;
 }
+.send-message{
+    width: 500px;
+}
+.social-contacts{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.social-contacts .socia-icons{
+    font-size: 35px;
+    border-radius: 3px;
+    color: #0066ff;
+}
 
 /*--------------------------------------------- Responsive for Mobile device ---------------------------------------------*/
+@media only screen and (min-width:669px) and (max-width:998px){
+    .contact-me-full{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-me-half{
+        width: 100%;
+    }
+} 
 @media only screen and (max-width:668px) {
     .contact-me-full{
         display: grid;
@@ -61,5 +86,12 @@
     }
     .form-inputs{
         padding: 0 20%;
+    }
+    .inputs{
+        width: 300px;
+    }
+    .send-message{
+        width: 300px;
+        margin-bottom: 30px;
     }
 }
