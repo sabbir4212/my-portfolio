@@ -1,0 +1,47 @@
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.half-banner{
+    width: 50%;
+    margin-top: 20px;
+}
+.half-banner h1{
+    font-size: 45px;
+    font-weight: 700;
+}
+.half-banner p{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+.half-banner img{
+    border-radius: 50%;
+    width: 400px;
+}
+.download-resume{
+    padding: 7px 15px;
+    color: #fff;
+    background: #0d6efd;
+    border-radius: 3px;
+}
+.download-resume:hover{
+    color: #fff;
+    background: #0066ff;
+}
+
+
+/*--------------------------------------------- Responsive for Mobile device ---------------------------------------------*/
+@media only screen and (max-width:668px) {
+    .banner{
+        padding: 50px 0;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .half-banner{
+        width: 100%;
+    }
+}
