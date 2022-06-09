@@ -4,7 +4,7 @@ import './Projects.css';
 const Projects = () => {
     return (
         <div className='projects'>
-            <h1 className='text-center'>MY PROJECTS</h1>
+            <h1 className='text-center fw-bold'>MY PROJECTS</h1>
             <hr />
         </div>
     );
