@@ -1,0 +1,65 @@
+.contact-me{
+    margin: 30px 0;
+    padding: 30px 0;
+}
+.contact-me-full{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-me-half{
+    width: 50%;
+}
+.contact-me-half img{
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.form-inputs{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.inputs{
+    display: grid;
+    align-items: center;
+}
+.inputs input,
+.inputs textarea{
+    width: 500px;
+    padding: 7px 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.inputs ::placeholder{
+    font-size: 15px;
+}
+.inputs label{
+    font-size: 20px;
+}
+.message-btn{
+    padding: 7px 15px;
+    border: 3px;
+    background: #0d6efd;
+    color: #fff;
+    border-radius: 3px;
+}
+.message-btn:hover{
+    background: #0066ff;
+}
+
+/*--------------------------------------------- Responsive for Mobile device ---------------------------------------------*/
+@media only screen and (max-width:668px) {
+    .contact-me-full{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-me-half{
+        width: 100%;
+    }
+    .form-inputs{
+        padding: 0 20%;
+    }
+}
