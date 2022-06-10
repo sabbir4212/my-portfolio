@@ -29,7 +29,7 @@ a{
 .link-btn:hover{
     color: rgb(230, 230, 230);
 }
-/* .link-btn::after{
+.link-btn::after{
     content: '';
     width: 100%;
     height: 2px;
@@ -52,7 +52,7 @@ a{
 .link-btn:hover::after,
 .active::after{
     transform: scaleX(1);
-} */
+}
 .header .menu-ico{
     display: none;
 }
