@@ -20,22 +20,21 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
-.exprience{
-    
-}
 
 
 /*--------------------------------------------- Responsive for Mobile device ---------------------------------------------*/
 @media only screen and (min-width:669px) and (max-width:998px){
     .about-me{
-        display: grid;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     
     }
     .about-me-half{
         width: 100%;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -50,14 +49,16 @@
 } 
 @media only screen and (max-width:668px) {
     .about-me{
-        display: grid;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     
     }
     .about-me-half{
         width: 100%;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
