@@ -1,0 +1,72 @@
+.about{
+    padding: 20px 4%;
+}
+.about-me{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.about-me-half{
+    width: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.my-experience{
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.exprience{
+    
+}
+
+
+/*--------------------------------------------- Responsive for Mobile device ---------------------------------------------*/
+@media only screen and (min-width:669px) and (max-width:998px){
+    .about-me{
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    .about-me-half{
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .my-experience{
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+} 
+@media only screen and (max-width:668px) {
+    .about-me{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .about-me-half{
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .my-experience{
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
