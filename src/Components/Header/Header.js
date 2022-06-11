@@ -13,14 +13,11 @@ const Header = () => {
         <div>
           <nav className={openNav ? " nav-close":"nav-open"}>
             <NavLink className="link-btn" to="/">Home</NavLink>
-            <NavLink className="link-btn" to="/blogs">Blogs</NavLink> 
-            {/* <a className='link-btn' href="/">Home</a>
-            <a className='link-btn' href="/skils">Skils</a>
-            <a className='link-btn' href="/about">About</a>
-            <a className='link-btn' href="/project">Project</a>
-            <a className='link-btn' href="/contact">Contact</a> */}
-            {/* <a className='link-btn' href="#blog">Blog</a> */}
-            {/* <NavLink className='link-btn' to="/blog">Blog</NavLink> */}
+            <NavLink className="link-btn" to="/skils">Skils</NavLink> 
+            <NavLink className="link-btn" to="/about">About</NavLink> 
+            <NavLink className="link-btn" to="/project">Project</NavLink> 
+            <NavLink className="link-btn" to="/contact">Contact</NavLink> 
+            <NavLink className="link-btn" to="/blog">Blog</NavLink>
           </nav>
           <button onClick={() => {setOpenNav(!openNav)}} className="menu-ico">{openNav ? <AiOutlineClose></AiOutlineClose> : <AiOutlineMenuUnfold></AiOutlineMenuUnfold>}</button>
         </div>

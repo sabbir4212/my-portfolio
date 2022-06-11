@@ -18,3 +18,36 @@
     width: 100%;
     height: 200px;
 }
+
+
+/*--------------------------------------------- Responsive for Mobile device ---------------------------------------------*/
+@media only screen and (min-width:669px) and (max-width:998px){
+    .projects-container{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        grid-gap: 3.3%;
+        margin: 20px 0;
+    }
+    .project{
+        width: 100%;
+        border: 1px solid #000;
+        border-radius: 2px;
+    }
+} 
+@media only screen and (max-width:668px) {
+    .projects-container{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        grid-gap: 3.3%;
+        margin: 20px 0;
+    }
+    .project{
+        width: 100%;
+        border: 1px solid #000;
+        border-radius: 2px;
+    }
+}
