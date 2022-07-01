@@ -12,12 +12,12 @@ const Header = () => {
         </div>
         <div>
           <nav className={openNav ? " nav-close":"nav-open"}>
-            <NavLink className="link-btn" to="/">Home</NavLink>
-            <NavLink className="link-btn" to="/skils">Skils</NavLink> 
-            <NavLink className="link-btn" to="/about">About</NavLink> 
-            <NavLink className="link-btn" to="/project">Project</NavLink> 
-            <NavLink className="link-btn" to="/contact">Contact</NavLink> 
-            <NavLink className="link-btn" to="/blog">Blog</NavLink>
+            <NavLink className={({isActive}) => (isActive ? 'active-link' : 'link-btn-style')} to="home#home" >Home</NavLink>
+            <NavLink className={({isActive}) => (isActive ? 'active-link' : 'link-btn-style')} to="skils#skils">Skils</NavLink> 
+            <NavLink className={({isActive}) => (isActive ? 'active-link' : 'link-btn-style')} to="about#about">About</NavLink> 
+            <NavLink className={({isActive}) => (isActive ? 'active-link' : 'link-btn-style')} to="project#project">Project</NavLink> 
+            <NavLink className={({isActive}) => (isActive ? 'active-link' : 'link-btn-style')} to="contact#contact">Contact</NavLink> 
+            <NavLink className={({isActive}) => (isActive ? 'active-link' : 'link-btn-style')} to="blog#blog">Blog</NavLink>
           </nav>
           <button onClick={() => {setOpenNav(!openNav)}} className="menu-ico">{openNav ? <AiOutlineClose></AiOutlineClose> : <AiOutlineMenuUnfold></AiOutlineMenuUnfold>}</button>
         </div>
@@ -26,3 +26,5 @@ const Header = () => {
 };
 
 export default Header;
+
+// game password https://thegamesdownload.net/

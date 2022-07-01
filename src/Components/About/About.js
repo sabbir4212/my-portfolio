@@ -6,15 +6,18 @@ import {
   FaTwitterSquare,
   FaLinkedin,
 } from "react-icons/fa";
+import { Nav } from "react-bootstrap";
 
 const About = () => {
   return (
-    <div className="about">
-      <h1 className="fw-bold text-center">ABOUT ME</h1>
-      <hr />
+    <div className="about" id="about">
+      <div data-aos="fade-up">
+        <h1 className="fw-bold text-center">ABOUT ME</h1>
+        <hr />
+      </div>
       <div className="about-me">
         <div className="about-me-half">
-          <div className="">
+          <div data-aos="fade-right" data-aos-duration="500">
             <p
               style={{ letterSpacing: ".5px", fontWeight: "300" }}
               className="fs-4 "
@@ -57,47 +60,67 @@ const About = () => {
         </div>
 
         <div className="about-me-half mt-5 md-mt-0">
-          <div className="d-flex justify-content-between">
-            <a
+          <div
+            className="d-flex justify-content-between"
+            data-aos="fade-left"
+            data-aos-duration="500"
+          >
+            <Nav.Link
               className="text-center mx-2 md-mx-3"
               target={"_blank"}
               href="https://www.facebook.com/profile.php?id=100028217645722"
             >
-              <FaFacebookSquare style={{ fontSize: "35px" }}></FaFacebookSquare>
+              <FaFacebookSquare
+                className="text-primary"
+                style={{ fontSize: "35px" }}
+              ></FaFacebookSquare>
               <h5 className="text-decoration-underline text-primary">
                 Facebook
               </h5>
-            </a>
-            <a
+            </Nav.Link>
+            <Nav.Link
               className="text-center mx-2 md-mx-3"
               target={"_blank"}
               href="https://twitter.com/MdSabbi14327579"
             >
-              <FaTwitterSquare style={{ fontSize: "35px" }}></FaTwitterSquare>
+              <FaTwitterSquare
+                className="text-primary"
+                style={{ fontSize: "35px" }}
+              ></FaTwitterSquare>
               <h5 className="text-decoration-underline text-primary">
                 Twitter
               </h5>
-            </a>
-            <a
+            </Nav.Link>
+            <Nav.Link
               className="text-center mx-2 md-mx-3"
               target={"_blank"}
               href="https://www.linkedin.com/in/md-sabbir-a56163241/"
             >
-              <FaLinkedin style={{ fontSize: "35px" }}></FaLinkedin>
+              <FaLinkedin
+                className="text-primary"
+                style={{ fontSize: "35px" }}
+              ></FaLinkedin>
               <h5 className="text-decoration-underline text-primary">
                 Linkedin
               </h5>
-            </a>
-            <a
+            </Nav.Link>
+            <Nav.Link
               className="text-center mx-2 md-mx-3"
               target={"_blank"}
               href="https://github.com/sabbir4212"
             >
-              <FaGithubSquare style={{ fontSize: "35px" }}></FaGithubSquare>
+              <FaGithubSquare
+                className="text-primary"
+                style={{ fontSize: "35px" }}
+              ></FaGithubSquare>
               <h5 className="text-decoration-underline text-primary">Github</h5>
-            </a>
+            </Nav.Link>
           </div>
-          <div className="my-experience my-4 text-center">
+          <div
+            className="my-experience my-4 text-center"
+            data-aos="fade-left"
+            data-aos-duration="500"
+          >
             <div className="p-4 exprience rounded bg-secondary">
               <h1>1+</h1>
               <p>Year Of Experience</p>

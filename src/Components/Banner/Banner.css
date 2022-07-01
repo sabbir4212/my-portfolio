@@ -25,6 +25,7 @@
     color: #fff;
     background: #0d6efd;
     border-radius: 3px;
+    display: inline-block;
 }
 .download-resume:hover{
     color: #fff;

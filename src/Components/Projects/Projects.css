@@ -18,7 +18,18 @@
     width: 100%;
     height: 200px;
 }
-
+.github-btn{
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: #155fcfef;
+    color: #fff;
+    border: none;
+}
+.github-btn:hover{
+    color: #fff;
+    background: #0a57cb;
+}
 
 /*--------------------------------------------- Responsive for Mobile device ---------------------------------------------*/
 @media only screen and (min-width:669px) and (max-width:998px){
