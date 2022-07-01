@@ -8,8 +8,10 @@ import { Nav } from "react-bootstrap";
 const Projects = () => {
   return (
     <div className="projects" id="project">
-      <h1 className="text-center fw-semibold">MY PROJECTS</h1>
-      <hr />
+      <div data-aos="fade-up">
+        <h1 className="text-center fw-semibold">MY PROJECTS</h1>
+        <hr />
+      </div>
 
       {/*----------- Modal Start -----------*/}
       {/*----------- Product 1 -----------*/}
@@ -46,10 +48,22 @@ const Projects = () => {
                     <img src={project1} className="d-block w-100" alt="..." />
                   </div>
                   <div className="carousel-item">
-                    <li className="text-dark">Users can Login our website and order, delete his order and submit reviews.</li>
-                    <li className="text-dark">Also has an admin panel for maintaining orders and products.</li>
-                    <li className="text-dark">Admin can see all orders, change order status, add or delete any product and make any user to admin.</li>
-                    <li className="text-dark">Admin Email: sabbirhosan370@gmail.com  Admin Password: 123456</li>
+                    <li className="text-dark">
+                      Users can Login our website and order, delete his order
+                      and submit reviews.
+                    </li>
+                    <li className="text-dark">
+                      Also has an admin panel for maintaining orders and
+                      products.
+                    </li>
+                    <li className="text-dark">
+                      Admin can see all orders, change order status, add or
+                      delete any product and make any user to admin.
+                    </li>
+                    <li className="text-dark">
+                      Admin Email: sabbirhosan370@gmail.com Admin Password:
+                      123456
+                    </li>
                   </div>
                 </div>
                 <button
@@ -91,8 +105,8 @@ const Projects = () => {
         </div>
       </div>
 
-{/*----------- Product 2 -----------*/}
-<div
+      {/*----------- Product 2 -----------*/}
+      <div
         className="modal fade"
         id="shoes-house-modal"
         data-bs-backdrop="static"
@@ -125,9 +139,19 @@ const Projects = () => {
                     <img src={project2} className="d-block w-100" alt="..." />
                   </div>
                   <div className="carousel-item">
-                    <li className="text-dark">It's a MERN stack Shoes House stocking website with a dynamic service section. Users can Stock and Deliver their Product.</li>
-                    <li className="text-dark">User can see there own stocked product and delete their product</li>
-                    <li className="text-dark">Website pages are protected only login users can Stock and Deliver their Product.</li>
+                    <li className="text-dark">
+                      It's a MERN stack Shoes House stocking website with a
+                      dynamic service section. Users can Stock and Deliver their
+                      Product.
+                    </li>
+                    <li className="text-dark">
+                      User can see there own stocked product and delete their
+                      product
+                    </li>
+                    <li className="text-dark">
+                      Website pages are protected only login users can Stock and
+                      Deliver their Product.
+                    </li>
                   </div>
                 </div>
                 <button
@@ -203,9 +227,18 @@ const Projects = () => {
                     <img src={project3} className="d-block w-100" alt="..." />
                   </div>
                   <div className="carousel-item">
-                    <li className="text-dark">It’s an independent gym trainer website user login in this website</li>
-                    <li className="text-dark">Websites have three types of membership: BRONZE, SILVER, AND GOLD.</li>
-                    <li className="text-dark">Website Membership Purchase route is protected only website login user can purchase our services.</li>
+                    <li className="text-dark">
+                      It’s an independent gym trainer website user login in this
+                      website
+                    </li>
+                    <li className="text-dark">
+                      Websites have three types of membership: BRONZE, SILVER,
+                      AND GOLD.
+                    </li>
+                    <li className="text-dark">
+                      Website Membership Purchase route is protected only
+                      website login user can purchase our services.
+                    </li>
                   </div>
                 </div>
                 <button
@@ -247,8 +280,8 @@ const Projects = () => {
         </div>
       </div>
       {/*----------- Modal End -----------*/}
-      <div className="projects-container">
-        <div className="project">
+      <div className="projects-container mt-5">
+        <div className="project" data-aos="fade-up">
           <img src={project3} alt="" />
           <h4 className="fw-bold text-center my-3">Pro Tools</h4>
           <div className="d-flex justify-content-center px-2 mb-2">
@@ -276,7 +309,7 @@ const Projects = () => {
             </Nav.Link>
           </div>
         </div>
-        <div className="project">
+        <div className="project" data-aos="fade-up">
           <img src={project2} alt="" />
           <h4 className="fw-bold text-center my-3">Sheos House</h4>
           <div className="d-flex justify-content-center px-2 mb-2">
@@ -304,7 +337,7 @@ const Projects = () => {
             </Nav.Link>
           </div>
         </div>
-        <div className="project">
+        <div className="project" data-aos="fade-up">
           <img src={project1} alt="" />
           <h4 className="fw-bold text-center my-3">The Bodycoach</h4>
           <div className="d-flex justify-content-center px-2 mb-2">

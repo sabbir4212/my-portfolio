@@ -3,13 +3,15 @@ import "./ContactMe.css";
 import myImg from "../../images/my-img.jpg";
 import { AiFillLinkedin, AiFillFacebook, AiFillGithub } from "react-icons/ai";
 import emailjs from "@emailjs/browser";
+import { Nav } from "react-bootstrap";
 
 const ContactMe = () => {
   const form = useRef();
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm(
+    emailjs
+      .sendForm(
         "service_e5gs5z6",
         "template_8ovkqyl",
         form.current,
@@ -27,9 +29,11 @@ const ContactMe = () => {
   };
   return (
     <div className="contact-me" id="contact">
-      <h1 className="text-center fw-semibold">CONTACT WITH ME</h1>
-      <hr />
-      <div className="contact-me-full">
+      <div data-aos="fade-up">
+        <h1 className="text-center fw-semibold">CONTACT WITH ME</h1>
+        <hr />
+      </div>
+      <div className="contact-me-full" data-aos="fade-up">
         <div className="contact-me-half d-grid justify-content-center">
           <form ref={form} onSubmit={handleFormSubmit} className="form-inputs">
             <div className="inputs">
@@ -58,7 +62,7 @@ const ContactMe = () => {
             </div>
           </form>
         </div>
-        <div className="contact-me-half d-grid justify-content-center">
+        <div className="contact-me-half d-grid justify-content-center" data-aos="fade-up">
           <img className="mx-auto" src={myImg} alt="" />
           <div className="fw-bold">
             <h3>Email: sabbirhosan370@gmail.com</h3>
@@ -66,27 +70,27 @@ const ContactMe = () => {
             <h3>Address: Tangail, Dhaka, Bangladesh</h3>
           </div>
           <div className="flex justify-content-between social-contacts">
-            <a
+            <Nav.Link
               target="_blank"
               className="socia-icons"
               href={"https://www.linkedin.com/in/md-sabbir-a56163241/"}
             >
               <AiFillLinkedin></AiFillLinkedin>
-            </a>
-            <a
+            </Nav.Link>
+            <Nav.Link
               target="_blank"
               className="socia-icons"
               href={"https://github.com/sabbir4212"}
             >
               <AiFillGithub></AiFillGithub>
-            </a>
-            <a
+            </Nav.Link>
+            <Nav.Link
               target="_blank"
               className="socia-icons"
               href={"https://www.facebook.com/profile.php?id=100028217645722"}
             >
               <AiFillFacebook></AiFillFacebook>
-            </a>
+            </Nav.Link>
           </div>
         </div>
       </div>

@@ -26,6 +26,9 @@
     color: #fff;
     border: none;
 }
+.github-btn:focus{
+    color: #fff;
+}
 .github-btn:hover{
     color: #fff;
     background: #0a57cb;
